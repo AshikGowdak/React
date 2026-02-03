@@ -1,6 +1,6 @@
 # Learning Summary – React & Tooling 📘⚛️
 
-This document summarizes the concepts I learned while exploring React fundamentals, JSX, and build tooling.
+This document summarizes the concepts I learned while exploring React fundamentals, JSX, React elements, components, and build tooling.
 
 ---
 
@@ -13,37 +13,81 @@ This document summarizes the concepts I learned while exploring React fundamenta
 - Common scripts include:
   - `start` – to run the development server
   - `build` – to create a production-ready build
-- Makes development workflow faster and easier
+- Makes the development workflow faster and easier
 
 ---
 
-### 2️⃣ `React.createElement`
+### 2️⃣ React Elements
+
+- Learned what a **React Element** is
+- A React element is a **plain JavaScript object**
+- It represents what should appear on the UI
+- React elements are immutable
+
+---
+
+### 3️⃣ `React.createElement`
 
 - `React.createElement` returns a **JavaScript object**
-- This object is a React Element
-- During rendering, React converts this object into actual **HTML code**
-- Helps understand how React works behind the scenes without JSX
+- This object is known as a React Element
+- During rendering, React converts this object into actual **HTML**
+- Helps understand how React works internally without JSX
 
 ---
 
-### 3️⃣ JSX Basics
+### 4️⃣ React Functional Components
+
+- Learned how to create **React Functional Components**
+- Functional components are JavaScript functions that return React elements
+- Components help divide UI into reusable and manageable pieces
+
+---
+
+### 5️⃣ JSX Basics
 
 - JSX is **not HTML**
 - JSX is a **HTML-like syntax** written inside JavaScript
-- It makes UI code more readable and easier to write
-- JSX is just syntactic sugar over `React.createElement`
+- It improves readability and developer experience
+- JSX is syntactic sugar over `React.createElement`
 
 ---
 
-### 4️⃣ No HTML Inside JSX
+### 6️⃣ JSX Elements
 
-- JSX looks like HTML but it follows **JavaScript rules**
-- It is written inside JavaScript files
+- JSX elements are converted into React elements
+- JSX elements describe the UI structure
+- They are processed before reaching the JavaScript engine
+
+---
+
+### 7️⃣ Component Composition
+
+- Learned about **component composition**
+- One component can be used inside another component
+- Helps build complex UIs using small reusable components
+- Example: Using a `Title` component inside a `Heading` component
+
+---
+
+### 8️⃣ Accessing React Elements Inside Functional Components
+
+- React elements can be created and returned inside functional components
+- Functional components can:
+  - Return JSX elements
+  - Return elements created using `React.createElement`
+- Helps understand how components and elements work together
+
+---
+
+### 9️⃣ No HTML Inside JSX
+
+- JSX looks like HTML but follows **JavaScript rules**
+- JSX is written inside JavaScript files
 - JSX expressions are evaluated as JavaScript, not raw HTML
 
 ---
 
-### 5️⃣ JavaScript Engine Understanding
+### 🔟 JavaScript Engine Understanding
 
 - JavaScript engines understand **ES6 JavaScript**
 - Browsers do **not** understand JSX directly
@@ -51,7 +95,7 @@ This document summarizes the concepts I learned while exploring React fundamenta
 
 ---
 
-### 6️⃣ JSX Transpilation
+### 1️⃣1️⃣ JSX Transpilation
 
 - JSX is **transpiled** before reaching the JavaScript engine
 - Transpilation converts JSX into `React.createElement` calls
@@ -59,7 +103,7 @@ This document summarizes the concepts I learned while exploring React fundamenta
 
 ---
 
-### 7️⃣ Role of Parcel and Babel
+### 1️⃣2️⃣ Role of Parcel and Babel
 
 - Parcel is used as a bundler
 - Babel is used for transpilation
@@ -68,7 +112,7 @@ This document summarizes the concepts I learned while exploring React fundamenta
 
 ---
 
-### 8️⃣ JSX Attributes
+### 1️⃣3️⃣ JSX Attributes
 
 - Attributes in JSX are written in **camelCase**
 - Examples:
@@ -80,4 +124,4 @@ This document summarizes the concepts I learned while exploring React fundamenta
 
 ## ✅ Summary
 
-This learning session focused on understanding how React works internally, how JSX is processed, and how modern tools like Parcel and Babel help convert JSX into browser-readable JavaScript.
+This learning session focused on understanding React fundamentals such as React elements, functional components, JSX, component composition, and how modern tools like Parcel and Babel work together to transform JSX into browser-readable JavaScript.
