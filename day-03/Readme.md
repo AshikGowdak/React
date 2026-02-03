@@ -65,7 +65,7 @@ This document summarizes the concepts I learned while exploring React fundamenta
 - Learned about **component composition**
 - One component can be used inside another component
 - Helps build complex UIs using small reusable components
-- Example: Using a `Title` component inside a `Heading` component
+- Example: Using a `Title` component inside a `Heading` components
 
 ---
 
