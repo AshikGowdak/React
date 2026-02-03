@@ -7,7 +7,6 @@ const Title = () => <h1>Hello, React! from react Element</h1>;
 // Functional Component
 const HeadingComponent = () => (
   <div id="container">
-    {/* Component Composition */}
     <Title />
     <h1>Hello, React! from react functional Component</h1>;
   </div>
